@@ -11,7 +11,7 @@ Place in a `.yml` file such as this one in your `.github/workflows` folder. [Ref
 
 As of v0.3.0, all [`aws s3 sync` flags](https://docs.aws.amazon.com/cli/latest/reference/s3/sync.html) are optional to allow for maximum customizability (that's a word, I promise) and must be provided by you via `args:`.
 
-#### The following example includes optimal defaults for a public static website:
+#### The following example includes optimal defaults for a public static site:
 
 - `--acl public-read` makes your files publicly readable (make sure your [bucket settings are also set to public](https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteAccessPermissionsReqd.html)).
 - `--follow-symlinks` won't hurt and fixes some weird symbolic link problems that may come up.
